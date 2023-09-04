@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:wght@300&family=Black+Ops+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: #d0d4d5;
+  /* always set parent div position relative */
+  position: relative;
+}
+
+#nav {
+  height: 90px;
+  /* padding-top: 0 2px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#nav img {
+  height: 60px;
+  margin-right: 170px;
+  margin-left: 50px;
+}
+#nav-prt1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+#nav-prt1 h4 {
+  margin-right: 60px;
+  font-size: 19.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#nav-prt2 i {
+  margin-right: 60px;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: -10px;
+}
+#content {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 90px);
+  background-color: #d0d4d5;
+  /* background-color: red; */
+}
+#left {
+  width: 42%;
+  height: 100%;
+  /* background-color:; */
+  padding: 70px 130px;
+}
+#left h5 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #4d5051;
+  line-height: 50px;
+}
+#left h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  /* line-height: 90px; */
+  margin-left: 0;
+  margin-bottom: 25px;
+  user-select: none;
+}
+#left p {
+  margin-bottom: 60px;
+  font-size: 18px;
+  width: 75%;
+  line-height: 25px;
+}
+#left button {
+  background-color: #000;
+  color: white;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 15px 45px;
+  border-radius: 50px;
+  border-top-left-radius: 0px;
+}
+
+#right {
+  width: 58%;
+  height: 100%;
+  /* background-color: blue; */
+  position: relative;
+  padding: 150px 0;
+  /* for scrolling elemeents */
+  white-space: nowrap;
+  /* overflow-y: hidden; .,, both are correct*/
+  overflow-x: auto;
+}
+/* removing scrollbar */
+#right::-webkit-scrollbar {
+  display: none;
+}
+.elem {
+  height: 520px;
+  width: 380px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 10px 23px rgba(67, 68, 69, 15);
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.elem img {
+  object-fit: cover;
+  top: 10%;
+  position: absolute;
+  height: 70%;
+  width: 100%;
+}
+.elem h4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #d0d4d5;
+  font-size: 16px;
+  border-radius: 50px;
+  /* border-top-right-radius: 0;
+  border-top-left-radius: 0; */
+
+  padding: 13px 34px;
+  font-weight: 800;
+}
+.elem h5 {
+  position: absolute;
+  bottom: 8%;
+  right: 0;
+  background-color: black;
+  color: white;
+
+  font-size: 15px;
+  border-radius: 50px;
+  /* border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; */
+
+  padding: 12px 40px;
+  font-weight: 800;
+}
+
+/* mens section */
+.mens {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  /* display: flex;
+  width: 100%;
+  height: calc(100% - 90px); */
+  background-color: #d0d4d5;
+  position: relative;
+}
+
+#mens-left {
+  width: 100%;
+  height: 30%;
+  background-color: #d0d4d5;
+}
+
+#mens-left h1 {
+  margin: 12px calc(100% / 4);
+  padding: 20px 33px;
+
+  font-size: 50px;
+  font-family: "Black Ops One", cursive;
+}
+#mens-left h5 {
+  margin: 12px calc(100% / 4);
+  padding: 7px 33px;
+  font-size: 20px;
+  color: #585959;
+  font-family: "Black Ops One";
+}
+#mens-left small {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  font-style: italic;
+  font-weight: bold;
+}
+#mens-right {
+  width: 100%;
+  height: 70%;
+  background-color: #d0d4d5;
+  position: relative;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+#mens-right ::-webkit-scrollbar {
+  display: none;
+}
+#types ul {
+  font-size: 30px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 25px;
+}
+#types marquee {
+  margin: 12px calc(100% / 8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 33px;
+  /* padding: 5px 20px; */
+  height: 120px;
+  width: 80;
+}
+
+#types li {
+  /* background-color: #676969; */
+  background: linear-gradient(
+    11deg,
+    #535455 0%,
+    rgba(4, 18, 20, 1) 50%,
+    rgb(84, 85, 85) 100%
+  );
+  padding: 8px 20px;
+  color: white;
+  border-radius: 50px;
+  border: 2px solid rgb(56, 56, 56);
+  transform: scale();
+  transition: 1s all;
+}
+
+#types li:hover {
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.4);
+}
+.card-container {
+  margin-left: calc(100% / 8);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+#card {
+  margin: 12px 32px;
+  padding-left: 0;
+  height: 480px;
+  width: 420px;
+  background-color: white;
+  position: relative;
+  box-shadow: o 10 23 rgba(67, 68, 69, 15);
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 1px;
+  background-color: #535455;
+}
+#card img {
+  object-fit: cover;
+  position: absolute;
+  height: 88%;
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
+#card h2 {
+  position: absolute;
+  bottom: 0;
+  margin: 12px 140px;
+  color: white;
+}
+
+.container {
+  position: relative;
+  margin-top: -1px;
+  background-color: #acacac;
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+#left-footer {
+  color: black;
+  list-style: none;
+  font-weight: 700;
+  font-size: larger;
+  text-transform: uppercase;
+  margin: -30px 70px;
+}
+#left-footer li {
+  cursor: pointer;
+  line-height: 30px;
+  list-style: none;
+  transition: 1s all;
+  transform: scale();
+}
+
+#left-footer li:hover {
+  font-size: large;
+}
+
+#help {
+  color: black;
+
+  text-transform: uppercase;
+  margin: -30px 70px;
+}
+
+#help h4 {
+  line-height: 40px;
+}
+#help li {
+  cursor: pointer;
+  line-height: 25px;
+  list-style: none;
+  transition: 1s all;
+  transform: scale();
+  font-weight: 500;
+  color: #323333;
+}
+#aboutus {
+  color: black;
+
+  text-transform: uppercase;
+  margin: -30px 70px;
+}
+#aboutus h4 {
+  line-height: 40px;
+}
+#aboutus li {
+  cursor: pointer;
+  line-height: 25px;
+  list-style: none;
+  transition: 1s all;
+  transform: scale();
+  font-weight: 500;
+  color: #323333;
+}
+
+#icons {
+  color: #323333;
+  font-weight: 700;
+  font-size: 33px;
+
+  margin: -30px 70px;
+}
+#icons i {
+  cursor: pointer;
+  /* margin-right: 13px; */
+  margin: 1px 8px;
+}
+.contact {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  background-color:black;
+}
+
+.contact h5{
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  word-spacing: 4px;
+}
